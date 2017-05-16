@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    jcenter()
+}
+
+group = 'com.github.asbachb'
+version = '1.7.3'
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
